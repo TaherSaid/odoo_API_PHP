@@ -1,3 +1,4 @@
+<?php
 // echo("list prod :");
     // foreach ($prods as $prod) {
     //     echo("$prod[name]");
@@ -9,7 +10,7 @@
     // $uid = $common->authenticate($db, $username, $password, array());
 
   
-<!-- var_dump($uid); -->
+// var_dump($uid); 
 // $models = ripcord::client("$url/xmlrpc/2/object");
 // var_dump($models->execute_kw($db, $uid, $password,
 //     'res.partner', 'check_access_rights',
@@ -33,4 +34,24 @@
 // $records = $models->execute_kw($db, $uid, $password,
 //     'res.partner', 'read', array($ids));
 // count the number of fields fetched by default
-// echo count($records[0])
+// echo count($records[0]);
+
+
+// $ids = $models->execute_kw($db, $uid, $password,
+//     'res.partner', 'search',
+//     array(array(array('is_company', '=', true))),
+//     array('limit'=>1));
+// $records = $models->execute_kw($db, $uid, $password,
+//     'res.partner', 'read', array($ids));
+
+// count the number of fields fetched by default
+// count($records[0]);
+
+//listing Record field
+
+// var_dump($models->execute_kw($db, $uid, $password,
+// 'res.partner', 'search_read',
+// array(array(array('is_company', '=', true))),
+// array('fields'=>array('name', 'country_id', 'comment'), 'limit'=>5)));
+
+?>
