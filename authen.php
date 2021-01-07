@@ -11,9 +11,9 @@ $data = json_decode(file_get_contents("php://input"));
 
 
 $url = "http://localhost:8069";
-$db ="ODOO01";
-$username = $data[0]->username;
-$password = $data[0]->password;
+$db ="odoo_db";
+$username = "taher01";
+$password = "123456789";
 $auth_url=$url."/xmlrpc/2/common";
 $exec_url=$url."/xmlrpc/2/object";
 
